@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body{
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.canva{
+    display: block;
+    position: absolute;
+    top: 77px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.stats span{
+    font-weight: 600;
+}
+#quote{
+    text-align: justify;
+    margin: 50px 0 30px 0;
+
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 5px;
+    outline: none;
+    font-size: 16px;
+}
+button{
+    float: right;
+    margin-top: 20px;
+    background-color: white;
+    color: #000000;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.result{
+    margin-top: 40px;
+    display: none;
+}
+.result h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper span{
+    font-weight: 600;
+}
+
+.success{
+    color: #44b267;
+    animation: glow 1s ease-in-out infinite;
+}
+
+/* Text glowing from own shade to other shade */
+@-webkit-keyframes glow{
+    from{
+        text-shadow: 0 0 10px rgb(43, 255, 0),
+                     0 0 70px #26e600;
+    }
+    to{
+        text-shadow: 0 0 20px #4dff7a;
+    }
+}
+
+.fail{
+    color: #e81c4e;
+}
